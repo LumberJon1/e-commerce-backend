@@ -125,6 +125,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// Currently the DELETE route fails and references a parent foreign key constraint that fails.
 router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
   Product.destroy({
